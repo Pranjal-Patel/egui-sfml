@@ -153,6 +153,7 @@ fn handle_event(raw_input: &mut egui::RawInput, event: &sfml::window::Event) {
             ctrl,
             shift,
             system: _,
+            ..
         } => {
             if let Some(key) = key_conv(code) {
                 raw_input.events.push(egui::Event::Key {
